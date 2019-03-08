@@ -1,0 +1,16 @@
+   Compiling decision_tree v0.1.0 (/home/pearce/code/rust/decision_tree)
+error[E0308]: mismatched types
+  --> src/main.rs:62:36
+   |
+62 |             learner.print_tree(10, &data.classes, &data.labels);
+   |                                    ^^^^^^^^^^^^^ expected struct `std::vec::Vec`, found enum `arff::Class`
+   |
+   = note: expected type `&std::vec::Vec<std::vec::Vec<std::string::String>>`
+              found type `&std::vec::Vec<arff::Class>`
+
+error: aborting due to previous error
+
+For more information about this error, try `rustc --explain E0308`.
+error: Could not compile `decision_tree`.
+
+To learn more, run the command again with --verbose.
